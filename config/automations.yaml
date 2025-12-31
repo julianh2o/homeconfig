@@ -1,0 +1,321 @@
+- id: '1748570961661'
+  alias: Garage Remote Light Control
+  description: ''
+  triggers:
+  - id: 'off'
+    trigger: state
+    entity_id:
+    - binary_sensor.esp32_cyd_448cec_scene_off_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: moody
+    trigger: state
+    entity_id:
+    - binary_sensor.esp32_cyd_448cec_scene_moody_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: bright
+    trigger: state
+    entity_id:
+    - binary_sensor.esp32_cyd_448cec_scene_bright_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: normal
+    trigger: state
+    entity_id:
+    - binary_sensor.esp32_cyd_448cec_scene_normal_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - data: {}
+    target:
+      entity_id: scene.{{ trigger.id }}
+    action: scene.turn_on
+  mode: single
+- id: '1753298054394'
+  alias: Garage Left Button
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.esphome_esp32_6be964_remote_ch3
+    from: 'off'
+    to: 'on'
+  conditions: []
+  actions:
+  - action: cover.toggle
+    target:
+      entity_id:
+      - cover.athom_garage_door_026b40_garage_door
+    data: {}
+  mode: single
+- id: '1760932804799'
+  alias: Interpret Security
+  description: ''
+  triggers: []
+  conditions: []
+  actions:
+  - sequence:
+    - action: ai_task.generate_data
+      metadata: {}
+      data:
+        task_name: Interpret Security
+        instructions: Describe this image briefly with no formatting or emoji. If
+          there are cars visible, please enumerate them and specify whether they appear
+          to be arriving (facing towards the camera) or departing (facing away from
+          the camera).
+        entity_id: ai_task.ollama_ai_task
+        attachments:
+          media_content_id: media-source://camera/camera.g6_turret_high_resolution_channel
+          media_content_type: application/vnd.apple.mpegurl
+          metadata:
+            title: G6 Turret High resolution channel
+            thumbnail: /api/camera_proxy/camera.g6_turret_high_resolution_channel
+            media_class: video
+            children_media_class:
+            navigateIds:
+            - {}
+            - media_content_type: app
+              media_content_id: media-source://camera
+      response_variable: payload
+    - choose:
+      - conditions:
+        - condition: template
+          value_template: '{{ payload is string and "arriving" in payload|lower }}
+
+            '
+        sequence:
+        - target:
+            entity_id: switch.l1
+          action: switch.turn_on
+      - conditions:
+        - condition: template
+          value_template: '{{ payload is string and "arriving" not in payload|lower
+            }}
+
+            '
+        sequence:
+        - target:
+            entity_id: switch.l1
+          action: switch.turn_off
+  mode: single
+- id: '1764388653971'
+  alias: Sunset Automation
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 00:30:00
+  conditions: []
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data: {}
+    target:
+      area_id: pool
+  mode: single
+- id: '1764388710698'
+  alias: Late Night Lights Out
+  description: ''
+  triggers:
+  - trigger: time
+    at: 03:00:00
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  conditions: []
+  actions:
+  - action: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      area_id: pool
+  mode: single
+- id: '1765763838275'
+  alias: Garage Right Button
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.esphome_esp32_6be964_remote_ch2
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - action: cover.toggle
+    target:
+      entity_id:
+      - cover.athom_garage_door_01061c_garage_door
+    data: {}
+  mode: single
+- id: '1765838694035'
+  alias: Bawdy Shop Light Control Panel 2
+  description: ''
+  triggers:
+  - id: 'off'
+    trigger: state
+    entity_id:
+    - binary_sensor.control_panel_2_scene_off_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: moody
+    trigger: state
+    entity_id:
+    - binary_sensor.control_panel_2_scene_moody_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: bright
+    trigger: state
+    entity_id:
+    - binary_sensor.control_panel_2_scene_bright_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  - id: normal
+    trigger: state
+    entity_id:
+    - binary_sensor.control_panel_2_scene_normal_button
+    from:
+    - 'off'
+    to:
+    - 'on'
+  conditions: []
+  actions:
+  - data: {}
+    target:
+      entity_id: scene.{{ trigger.id }}
+    action: scene.turn_on
+  mode: single
+- id: '1766975163557'
+  alias: Outdoor Lights - Dusk & Motion Control
+  description: Turn lights to 50% at dusk, brighten to 100% on motion, dim back after
+    2 minutes
+  triggers:
+  - event: sunset
+    id: dusk
+    trigger: sun
+  - entity_id: binary_sensor.outdoor_motion_detector
+    to: 'on'
+    id: motion_detected
+    trigger: state
+  - entity_id:
+    - binary_sensor.outdoor_motion_detector
+    to:
+    - 'off'
+    for:
+      minutes: 2
+    id: motion_cleared
+    trigger: state
+  - trigger: sun
+    id: dawn
+    event: sunrise
+    offset: 0
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: dusk
+      sequence:
+      - target:
+          entity_id:
+          - light.c20
+          - light.c21
+          - light.c22
+          - light.c23
+        data:
+          brightness_pct: 25
+        action: light.turn_on
+    - conditions:
+      - condition: trigger
+        id: motion_detected
+      - condition: sun
+        after: sunset
+        before: sunrise
+      sequence:
+      - target:
+          entity_id:
+          - light.c20
+          - light.c21
+          - light.c22
+          - light.c23
+        data:
+          brightness_pct: 100
+          transition: 3
+        action: light.turn_on
+    - conditions:
+      - condition: trigger
+        id: motion_cleared
+      - condition: sun
+        after: sunset
+        before: sunrise
+      sequence:
+      - target:
+          entity_id:
+          - light.c20
+          - light.c21
+          - light.c22
+          - light.c23
+        data:
+          brightness_pct: 25
+          transition: 3
+        action: light.turn_on
+    - conditions:
+      - condition: trigger
+        id: dawn
+      sequence:
+      - target:
+          entity_id:
+          - light.c20
+          - light.c21
+          - light.c22
+          - light.c23
+        data:
+          transition: 3
+        action: light.turn_off
+  mode: restart
+- id: '1767146449634'
+  alias: Garage Door Open for Known Vehicle
+  description: Opens garage door when a specific license plate is detected
+  triggers:
+  - event_type: state_changed
+    event_data:
+      entity_id: event.g6_turret_vehicle
+    trigger: event
+  conditions:
+  - condition: template
+    value_template: "{{\n   trigger.event.data.old_state is not none and\n   not trigger.event.data.old_state.attributes.get('restored',
+      false) and\n   trigger.event.data.old_state.state != 'unavailable' and\n   trigger.event.data.new_state
+      is not none and\n   trigger.event.data.new_state.attributes.event_type == 'detected'
+      and\n   trigger.event.data.new_state.attributes.license_plate in ['79699J4']\n
+      }}\n"
+  actions:
+  - action: cover.open
+    target:
+      entity_id: cover.athom_garage_door_026b40_garage_door
+    enabled: false
+  - device_id: 74515e8a14a84128e4dfc92843039089
+    domain: mobile_app
+    type: notify
+    message: Rivian Detected

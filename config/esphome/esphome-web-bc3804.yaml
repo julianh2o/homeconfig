@@ -1,0 +1,100 @@
+substitutions:
+  type: soil
+  mac: bc3804
+  name: Soil Sensor 1
+  encryption_key: "iv3Dihi8fIvQP1KfJJshEGCUk9zgitdYRf70odinxJE="
+
+esphome:
+  name: esphome-${type}-${mac}
+  friendly_name: ${name}
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+logger:
+
+ota:
+
+api:
+  encryption:
+    key: ${encryption_key}
+
+# Enable Improv Provisioning
+improv_serial:
+esp32_improv:
+  authorizer: none
+web_server:
+  
+deep_sleep:
+  run_duration: 1min
+  sleep_duration: 20min
+  id: deep_sleep_1
+  
+switch:
+  - platform: gpio
+    id: led
+    pin: 16
+    name: "ESP Plant Sensor LED"
+    inverted: yes
+    icon: "mdi:alarm-light-outline"
+  
+sensor:
+  - platform: wifi_signal
+    id: wifi_sensor
+    name: "Plant Sensor WiFi Signal"
+    update_interval: never
+    
+  - platform: homeassistant
+    id: moisture_threshold
+    name: "Soil Moisture Threshold"
+    entity_id: input_number.soil_moisture_threshold
+    internal: true
+            
+  - platform: dht
+    id: th_sensor
+    pin: GPIO22
+    temperature:
+      name: "Plant Sensor Air Temperature"
+    humidity:
+      name: "Plant Sensor Air Humidity"
+    update_interval: never
+
+  - platform: adc
+    id: soil_sensor
+    pin: GPIO32
+    name: "Soil Moisture"
+    device_class: "humidity"
+    update_interval: never
+    attenuation: 11db
+    unit_of_measurement: "%"
+    accuracy_decimals: 0
+    filters:
+      - calibrate_linear:
+        - 1.17 -> 100
+        - 3.11 -> 0
+      - lambda: |-
+          if (x  < 0.0) return 0;
+          if (x > 100.0) return 100;
+          return x;
+    on_value:
+      then:
+        - if:
+            condition:
+              lambda: 'return id(soil_sensor).state < id(moisture_threshold).state;'
+            then:
+              - switch.turn_on: led
+            else:
+              - switch.turn_off: led
+
+interval:
+  - interval: 20s
+    then:
+      - component.update: th_sensor
+      - component.update: soil_sensor
+      - component.update: wifi_sensor

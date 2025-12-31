@@ -1,0 +1,42 @@
+substitutions:
+  type: esp32
+  mac: 6be964
+  name: Opener Remote 6be964
+
+# ESPHome Core Configuration
+
+esphome:
+  name: esphome-${type}-${mac}
+  friendly_name: ${name}
+  name_add_mac_suffix: false
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+  encryption:
+    key: !secret ha_encryption_key
+
+# Universal Device Configuration
+
+logger:
+
+ota:
+  - platform: esphome
+
+web_server:
+
+binary_sensor:
+  - platform: gpio
+    name: "Remote CH1"
+    pin:
+      number: GPIO4
+      mode:
+        input: true
+        pullup: true

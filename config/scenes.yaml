@@ -1,0 +1,2002 @@
+- id: '1764191085405'
+  name: 'Off'
+  entities:
+    switch.l1:
+      friendly_name: L1
+      state: 'off'
+    switch.l2:
+      friendly_name: L2
+      state: 'off'
+    switch.l3_2:
+      friendly_name: L3
+      state: 'off'
+    switch.l4:
+      friendly_name: L4
+      state: 'off'
+    switch.l6:
+      friendly_name: L6
+      state: unavailable
+    switch.l7:
+      friendly_name: L7
+      state: unavailable
+    switch.l8:
+      friendly_name: L8
+      state: unavailable
+    switch.l9:
+      friendly_name: L9
+      state: 'off'
+    switch.l10:
+      friendly_name: L10
+      state: unavailable
+    switch.l11:
+      friendly_name: L11
+      state: unavailable
+    light.c1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C1
+      supported_features: 44
+      state: 'off'
+    light.c2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C2
+      supported_features: 44
+      state: 'off'
+    light.c3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C3
+      supported_features: 44
+      state: 'off'
+    light.c4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C4
+      supported_features: 44
+      state: 'off'
+    light.c5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C5
+      supported_features: 44
+      state: 'off'
+    light.c6:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C6
+      supported_features: 44
+      state: 'off'
+    light.c7:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C7
+      supported_features: 44
+      state: 'off'
+    light.c8:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C8
+      supported_features: 44
+      state: 'off'
+    light.c9:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C9
+      supported_features: 44
+      state: 'off'
+    light.c10:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C10
+      supported_features: 44
+      state: 'off'
+    light.c11:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: C11
+      supported_features: 44
+      state: 'off'
+    light.c12:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: C12
+      supported_features: 44
+      state: unavailable
+    light.n1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: N1
+      supported_features: 40
+      state: 'off'
+    light.n2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      off_with_transition: false
+      off_brightness: 254
+      friendly_name: N2
+      supported_features: 40
+      state: 'off'
+    light.h7039:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9000
+      min_mireds: 111
+      max_mireds: 500
+      effect_list:
+      - none
+      - sunrise
+      - sunset
+      - movie
+      - dating
+      - romantic
+      - twinkle
+      - candlelight
+      - snowflake
+      - energetic
+      - breathe
+      - crossing
+      supported_color_modes:
+      - color_temp
+      - rgb
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: West String
+      supported_features: 4
+      state: 'off'
+  metadata:
+    switch.l1:
+      entity_only: true
+    switch.l2:
+      entity_only: true
+    switch.l3_2:
+      entity_only: true
+    switch.l4:
+      entity_only: true
+    switch.l6:
+      entity_only: true
+    switch.l7:
+      entity_only: true
+    switch.l8:
+      entity_only: true
+    switch.l9:
+      entity_only: true
+    switch.l10:
+      entity_only: true
+    switch.l11:
+      entity_only: true
+    light.c1:
+      entity_only: true
+    light.c2:
+      entity_only: true
+    light.c3:
+      entity_only: true
+    light.c4:
+      entity_only: true
+    light.c5:
+      entity_only: true
+    light.c6:
+      entity_only: true
+    light.c7:
+      entity_only: true
+    light.c8:
+      entity_only: true
+    light.c9:
+      entity_only: true
+    light.c10:
+      entity_only: true
+    light.c11:
+      entity_only: true
+    light.c12:
+      entity_only: true
+    light.n1:
+      entity_only: true
+    light.n2:
+      entity_only: true
+- id: '1764203219920'
+  name: Bright
+  entities:
+    switch.l1:
+      friendly_name: L1
+      state: 'off'
+    switch.l2:
+      friendly_name: L2
+      state: 'on'
+    switch.l3_2:
+      friendly_name: L3
+      state: 'on'
+    switch.l4:
+      friendly_name: L4
+      state: 'on'
+    switch.l6:
+      friendly_name: L6
+      state: unavailable
+    switch.l7:
+      friendly_name: L7
+      state: unavailable
+    switch.l8:
+      friendly_name: L8
+      state: unavailable
+    switch.l9:
+      friendly_name: L9
+      state: 'on'
+    switch.l10:
+      friendly_name: L10
+      state: unavailable
+    switch.l11:
+      friendly_name: L11
+      state: unavailable
+    light.c1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C1
+      supported_features: 44
+      state: 'on'
+    light.c2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C2
+      supported_features: 44
+      state: 'on'
+    light.c3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C3
+      supported_features: 44
+      state: 'on'
+    light.c4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C4
+      supported_features: 44
+      state: 'on'
+    light.c5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C5
+      supported_features: 44
+      state: 'on'
+    light.c6:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C6
+      supported_features: 44
+      state: 'on'
+    light.c7:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C7
+      supported_features: 44
+      state: 'on'
+    light.c8:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C8
+      supported_features: 44
+      state: 'on'
+    light.c9:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C9
+      supported_features: 44
+      state: 'on'
+    light.c10:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C10
+      supported_features: 44
+      state: 'on'
+    light.c11:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 38.222
+      - 52.941
+      rgb_color:
+      - 255
+      - 206
+      - 120
+      xy_color:
+      - 0.458
+      - 0.41001
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C11
+      supported_features: 44
+      state: 'on'
+    light.c12:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: C12
+      supported_features: 44
+      state: unavailable
+    light.n1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N1
+      supported_features: 40
+      state: 'on'
+    light.n2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N2
+      supported_features: 40
+      state: 'on'
+    light.h7039:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9000
+      min_mireds: 111
+      max_mireds: 500
+      effect_list:
+      - none
+      - sunrise
+      - sunset
+      - movie
+      - dating
+      - romantic
+      - twinkle
+      - candlelight
+      - snowflake
+      - energetic
+      - breathe
+      - crossing
+      supported_color_modes:
+      - color_temp
+      - rgb
+      effect:
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2814
+      color_temp: 355
+      hs_color:
+      - 28.16
+      - 62.198
+      rgb_color:
+      - 255
+      - 171
+      - 96
+      xy_color:
+      - 0.514
+      - 0.387
+      friendly_name: West String
+      supported_features: 4
+      state: 'on'
+  metadata:
+    switch.l1:
+      entity_only: true
+    switch.l2:
+      entity_only: true
+    switch.l3_2:
+      entity_only: true
+    switch.l4:
+      entity_only: true
+    switch.l6:
+      entity_only: true
+    switch.l7:
+      entity_only: true
+    switch.l8:
+      entity_only: true
+    switch.l9:
+      entity_only: true
+    switch.l10:
+      entity_only: true
+    switch.l11:
+      entity_only: true
+    light.c1:
+      entity_only: true
+    light.c2:
+      entity_only: true
+    light.c3:
+      entity_only: true
+    light.c4:
+      entity_only: true
+    light.c5:
+      entity_only: true
+    light.c6:
+      entity_only: true
+    light.c7:
+      entity_only: true
+    light.c8:
+      entity_only: true
+    light.c9:
+      entity_only: true
+    light.c10:
+      entity_only: true
+    light.c11:
+      entity_only: true
+    light.c12:
+      entity_only: true
+- id: '1764203514240'
+  name: Normal
+  entities:
+    switch.l1:
+      friendly_name: L1
+      state: 'on'
+    switch.l2:
+      friendly_name: L2
+      state: 'on'
+    switch.l3_2:
+      friendly_name: L3
+      state: 'on'
+    switch.l4:
+      friendly_name: L4
+      state: 'on'
+    switch.l6:
+      friendly_name: L6
+      state: unavailable
+    switch.l7:
+      friendly_name: L7
+      state: unavailable
+    switch.l8:
+      friendly_name: L8
+      state: unavailable
+    switch.l9:
+      friendly_name: L9
+      state: 'on'
+    switch.l10:
+      friendly_name: L10
+      state: unavailable
+    switch.l11:
+      friendly_name: L11
+      state: unavailable
+    light.c1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: color_temp
+      brightness: 135
+      color_temp_kelvin: 3521
+      color_temp: 284
+      hs_color:
+      - 27.152
+      - 44.32
+      rgb_color:
+      - 255
+      - 193
+      - 142
+      xy_color:
+      - 0.452
+      - 0.373
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C1
+      supported_features: 44
+      state: 'on'
+    light.c2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 3521
+      color_temp: 284
+      hs_color:
+      - 27.152
+      - 44.32
+      rgb_color:
+      - 255
+      - 193
+      - 142
+      xy_color:
+      - 0.452
+      - 0.373
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C2
+      supported_features: 44
+      state: 'on'
+    light.c3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.589
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C3
+      supported_features: 44
+      state: 'on'
+    light.c4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.589
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C4
+      supported_features: 44
+      state: 'on'
+    light.c5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 276.923
+      - 40.784
+      rgb_color:
+      - 215
+      - 151
+      - 255
+      xy_color:
+      - 0.313
+      - 0.21
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C5
+      supported_features: 44
+      state: 'on'
+    light.c6:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 3521
+      color_temp: 284
+      hs_color:
+      - 27.152
+      - 44.32
+      rgb_color:
+      - 255
+      - 193
+      - 142
+      xy_color:
+      - 0.452
+      - 0.373
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C6
+      supported_features: 44
+      state: 'on'
+    light.c7:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.589
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C7
+      supported_features: 44
+      state: 'on'
+    light.c8:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 5025
+      color_temp: 199
+      hs_color:
+      - 27.028
+      - 18.905
+      rgb_color:
+      - 255
+      - 229
+      - 207
+      xy_color:
+      - 0.37
+      - 0.35
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C8
+      supported_features: 44
+      state: 'on'
+    light.c9:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 308.125
+      - 37.647
+      rgb_color:
+      - 255
+      - 159
+      - 242
+      xy_color:
+      - 0.371
+      - 0.239
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C9
+      supported_features: 44
+      state: 'on'
+    light.c10:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.589
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C10
+      supported_features: 44
+      state: 'on'
+    light.c11:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: color_temp
+      brightness: 254
+      color_temp_kelvin: 5025
+      color_temp: 199
+      hs_color:
+      - 27.028
+      - 18.905
+      rgb_color:
+      - 255
+      - 229
+      - 207
+      xy_color:
+      - 0.37
+      - 0.35
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C11
+      supported_features: 44
+      state: 'on'
+    light.c12:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: C12
+      supported_features: 44
+      state: unavailable
+    light.n1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 135
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N1
+      supported_features: 40
+      state: 'on'
+    light.n2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 133
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N2
+      supported_features: 40
+      state: 'on'
+    light.h7039:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9000
+      min_mireds: 111
+      max_mireds: 500
+      effect_list:
+      - none
+      - sunrise
+      - sunset
+      - movie
+      - dating
+      - romantic
+      - twinkle
+      - candlelight
+      - snowflake
+      - energetic
+      - breathe
+      - crossing
+      supported_color_modes:
+      - color_temp
+      - rgb
+      effect:
+      color_mode: color_temp
+      brightness: 175
+      color_temp_kelvin: 2814
+      color_temp: 355
+      hs_color:
+      - 28.16
+      - 62.198
+      rgb_color:
+      - 255
+      - 171
+      - 96
+      xy_color:
+      - 0.514
+      - 0.387
+      friendly_name: West String
+      supported_features: 4
+      state: 'on'
+  metadata:
+    switch.l1:
+      entity_only: true
+    switch.l2:
+      entity_only: true
+    switch.l3_2:
+      entity_only: true
+    switch.l4:
+      entity_only: true
+    switch.l6:
+      entity_only: true
+    switch.l7:
+      entity_only: true
+    switch.l8:
+      entity_only: true
+    switch.l9:
+      entity_only: true
+    switch.l10:
+      entity_only: true
+    switch.l11:
+      entity_only: true
+    light.c1:
+      entity_only: true
+    light.c2:
+      entity_only: true
+    light.c3:
+      entity_only: true
+    light.c4:
+      entity_only: true
+    light.c5:
+      entity_only: true
+    light.c6:
+      entity_only: true
+    light.c7:
+      entity_only: true
+    light.c8:
+      entity_only: true
+    light.c9:
+      entity_only: true
+    light.c10:
+      entity_only: true
+    light.c11:
+      entity_only: true
+    light.c12:
+      entity_only: true
+- id: '1764203537663'
+  name: Moody
+  entities:
+    switch.l1:
+      friendly_name: L1
+      state: 'on'
+    switch.l2:
+      friendly_name: L2
+      state: 'on'
+    switch.l3_2:
+      friendly_name: L3
+      state: 'on'
+    switch.l4:
+      friendly_name: L4
+      state: 'on'
+    switch.l6:
+      friendly_name: L6
+      state: unavailable
+    switch.l7:
+      friendly_name: L7
+      state: unavailable
+    switch.l8:
+      friendly_name: L8
+      state: unavailable
+    switch.l9:
+      friendly_name: L9
+      state: 'on'
+    switch.l10:
+      friendly_name: L10
+      state: unavailable
+    switch.l11:
+      friendly_name: L11
+      state: unavailable
+    light.c1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 219.048
+      - 49.412
+      rgb_color:
+      - 129
+      - 173
+      - 255
+      xy_color:
+      - 0.207996
+      - 0.216999
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C1
+      supported_features: 44
+      state: 'on'
+    light.c2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 308.125
+      - 37.647
+      rgb_color:
+      - 255
+      - 159
+      - 242
+      xy_color:
+      - 0.371
+      - 0.239
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C2
+      supported_features: 44
+      state: 'on'
+    light.c3:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.588998
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C3
+      supported_features: 44
+      state: 'on'
+    light.c4:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.588998
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C4
+      supported_features: 44
+      state: 'on'
+    light.c5:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 276.923
+      - 40.784
+      rgb_color:
+      - 215
+      - 151
+      - 255
+      xy_color:
+      - 0.313
+      - 0.21
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C5
+      supported_features: 44
+      state: 'on'
+    light.c6:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 276.923
+      - 40.784
+      rgb_color:
+      - 215
+      - 151
+      - 255
+      xy_color:
+      - 0.312993
+      - 0.209995
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C6
+      supported_features: 44
+      state: 'on'
+    light.c7:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.588998
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C7
+      supported_features: 44
+      state: 'on'
+    light.c8:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 219.048
+      - 49.412
+      rgb_color:
+      - 129
+      - 173
+      - 255
+      xy_color:
+      - 0.207996
+      - 0.216999
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C8
+      supported_features: 44
+      state: 'on'
+    light.c9:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 308.125
+      - 37.647
+      rgb_color:
+      - 255
+      - 159
+      - 242
+      xy_color:
+      - 0.370993
+      - 0.238987
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C9
+      supported_features: 44
+      state: 'on'
+    light.c10:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 9.231
+      - 66.275
+      rgb_color:
+      - 255
+      - 112
+      - 86
+      xy_color:
+      - 0.588998
+      - 0.329
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C10
+      supported_features: 44
+      state: 'on'
+    light.c11:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      effect: 'off'
+      color_mode: xy
+      brightness: 254
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 308.125
+      - 37.647
+      rgb_color:
+      - 255
+      - 159
+      - 242
+      xy_color:
+      - 0.371
+      - 0.239
+      off_with_transition: false
+      off_brightness:
+      friendly_name: C11
+      supported_features: 44
+      state: 'on'
+    light.c12:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - 'off'
+      - colorloop
+      supported_color_modes:
+      - color_temp
+      - xy
+      friendly_name: C12
+      supported_features: 44
+      state: unavailable
+    light.n1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 102
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N1
+      supported_features: 40
+      state: 'on'
+    light.n2:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      color_mode: color_temp
+      brightness: 94
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 167
+      - 88
+      xy_color:
+      - 0.524
+      - 0.388
+      off_with_transition: false
+      off_brightness:
+      friendly_name: N2
+      supported_features: 40
+      state: 'on'
+    light.h7039:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9000
+      min_mireds: 111
+      max_mireds: 500
+      effect_list:
+      - none
+      - sunrise
+      - sunset
+      - movie
+      - dating
+      - romantic
+      - twinkle
+      - candlelight
+      - snowflake
+      - energetic
+      - breathe
+      - crossing
+      supported_color_modes:
+      - color_temp
+      - rgb
+      effect:
+      color_mode: color_temp
+      brightness: 145
+      color_temp_kelvin: 2814
+      color_temp: 355
+      hs_color:
+      - 28.16
+      - 62.198
+      rgb_color:
+      - 255
+      - 171
+      - 96
+      xy_color:
+      - 0.514
+      - 0.387
+      friendly_name: West String
+      supported_features: 4
+      state: 'on'
+  metadata:
+    switch.l1:
+      entity_only: true
+    switch.l2:
+      entity_only: true
+    switch.l3_2:
+      entity_only: true
+    switch.l4:
+      entity_only: true
+    switch.l6:
+      entity_only: true
+    switch.l7:
+      entity_only: true
+    switch.l8:
+      entity_only: true
+    switch.l9:
+      entity_only: true
+    switch.l10:
+      entity_only: true
+    switch.l11:
+      entity_only: true
+    light.c1:
+      entity_only: true
+    light.c2:
+      entity_only: true
+    light.c3:
+      entity_only: true
+    light.c4:
+      entity_only: true
+    light.c5:
+      entity_only: true
+    light.c6:
+      entity_only: true
+    light.c7:
+      entity_only: true
+    light.c8:
+      entity_only: true
+    light.c9:
+      entity_only: true
+    light.c10:
+      entity_only: true
+    light.c11:
+      entity_only: true
+    light.c12:
+      entity_only: true

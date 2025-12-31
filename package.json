@@ -1,0 +1,9 @@
+{
+  "name": "homeconfig",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "pull":"rsync -av --exclude-from=.rsyncignore 192.168.0.110:/config/ ./config"
+  }
+}

@@ -1,0 +1,10 @@
+*.db
+*.db-shm
+*.db-wal
+*.gz
+.*
+*.log
+*.log.*
+__pycache__/
+tts/
+custom_components/hacs/
