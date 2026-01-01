@@ -1,0 +1,12 @@
+analyze_camera:
+  name: Analyze Camera for License Plates
+  description: Captures a snapshot from the specified camera and analyzes it for license plates using CodeProject.AI ALPR.
+  fields:
+    entity_id:
+      name: Camera Entity
+      description: The camera entity to capture and analyze
+      required: true
+      example: "camera.driveway_camera"
+      selector:
+        entity:
+          domain: camera

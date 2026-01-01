@@ -4,6 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "pull":"rsync -av --exclude-from=.rsyncignore 192.168.0.110:/config/ ./config"
+    "pull": "rsync -av --exclude-from=.rsyncignore root@192.168.0.110:/config/ ./config",
+    "push": "rsync -av -O --no-perms --exclude-from=.rsyncignore ./config/ root@192.168.0.110:/config",
+    "reload": "source .env && curl -X POST -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/services/homeassistant/reload_core_config",
+    "reload:automations": "source .env && curl -X POST -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/services/automation/reload",
+    "reload:templates": "source .env && curl -X POST -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/services/template/reload",
+    "restart": "source .env && curl -X POST -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/services/homeassistant/restart",
+    "states": "source .env && curl -s -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/states | python3 -m json.tool",
+    "status": "source .env && curl -s -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/states | python3 -c \"import sys, json; data = json.load(sys.stdin); [e.pop(k, None) for e in data for k in ['last_changed', 'last_updated', 'last_reported', 'context']]; print(json.dumps(data, indent=2))\"",
+    "logs": "ssh root@192.168.0.110 'ha core logs --lines 100'",
+    "logs:follow": "ssh root@192.168.0.110 'ha core logs --follow'"
   }
 }
