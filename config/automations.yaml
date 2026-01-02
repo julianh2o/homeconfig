@@ -340,3 +340,23 @@
         type: notify
         message: "{{ states('sensor.alpr_detected_plates') }} license plate(s) detected: {{ state_attr('sensor.alpr_detected_plates', 'plates') | map(attribute='plate') | join(', ') }}"
   mode: single
+- id: '1735694400000'
+  alias: Driveway ALPR Arriving Notification
+  description: Sends notification when a vehicle is detected arriving at the driveway
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.driveway_alpr_last_license_plate
+  conditions:
+  - condition: template
+    value_template: "{{ trigger.to_state.attributes.plate_read == true }}"
+  - condition: template
+    value_template: "{{ trigger.to_state.attributes.direction == 'arriving' }}"
+  - condition: template
+    value_template: "{{ trigger.to_state.state != 'Unknown' }}"
+  actions:
+  - device_id: 74515e8a14a84128e4dfc92843039089
+    domain: mobile_app
+    type: notify
+    message: "Detected {{ trigger.to_state.state }} Arriving"
+  mode: single

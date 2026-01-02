@@ -1,0 +1,32 @@
+esphome:
+  name: espcam-3
+  friendly_name: ESPCam 3
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "2ItGQaSZT/gdN9cKW3QigsRgijGt0Nw1g5K1fOBj6q8="
+
+ota:
+  - platform: esphome
+    password: "d7c3314a94cb68ce919f79a5fe039264"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Espcam-3 Fallback Hotspot"
+    password: "YaDyLFHBd0cB"
+
+captive_portal:
+    
