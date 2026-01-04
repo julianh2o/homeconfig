@@ -9,6 +9,17 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
+lovelace:
+  mode: storage
+  dashboards:
+    lovelace-yaml:
+      mode: yaml
+      title: YAML
+      icon: mdi:script
+      show_in_sidebar: true
+      filename: dashboards.yaml
+
+
 http:
   # For extra security set this to only accept connections on localhost if NGINX is on the same machine
   # Uncommenting this will mean that you can only reach Home Assistant using the proxy, not directly via IP from other clients.

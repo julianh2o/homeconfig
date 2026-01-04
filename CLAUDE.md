@@ -93,3 +93,24 @@ The `.rsyncignore` file excludes:
 - HACS custom component files (`custom_components/hacs/`)
 
 When making changes to sync behavior, update `.rsyncignore` rather than modifying the rsync command directly.
+
+## Troubleshooting
+
+### Checking for Configuration Errors
+
+After making configuration changes, always check the Home Assistant logs for errors:
+
+```bash
+npm run logs          # View recent logs
+npm run logs:follow   # Monitor logs in real-time
+```
+
+To search for specific errors:
+```bash
+npm run logs 2>&1 | grep -i "error\|lovelace\|dashboard"
+```
+
+**Common issues:**
+- **Lovelace dashboards not appearing**: Make sure `lovelace:` configuration doesn't include `mode: yaml` unless you want to manage the main dashboard in YAML mode. For additional dashboards, only use `dashboards:` key.
+- **YAML syntax errors**: Check for proper indentation and valid YAML syntax
+- **Entity not found**: Verify entity IDs exist using `npm run status`

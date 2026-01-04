@@ -1,0 +1,251 @@
+views:
+  - title: Example
+    cards:
+      # Garage Doors
+      - type: grid
+        columns: 2
+        square: false
+        cards:
+          - type: custom:mushroom-cover-card
+            entity: cover.bawdy_shop_driveway_garage_door_00fc84_garage_door
+            show_buttons_control: false
+            show_position_control: false
+          - type: custom:mushroom-cover-card
+            entity: cover.internal_garage_door_010d80_garage_door
+            show_buttons_control: false
+            show_position_control: false
+          - type: custom:mushroom-cover-card
+            entity: cover.athom_garage_door_01061c_garage_door
+            show_buttons_control: false
+            show_position_control: false
+          - type: custom:mushroom-cover-card
+            entity: cover.athom_garage_door_026b40_garage_door
+            show_buttons_control: false
+            show_position_control: false
+
+      # Scene Buttons
+      - type: grid
+        columns: 4
+        square: false
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.off
+            name: "Off"
+            icon: mdi:lightbulb-off
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.off
+          - type: custom:mushroom-entity-card
+            entity: scene.moody
+            name: "Moody"
+            icon: mdi:lightbulb-variant
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.moody
+          - type: custom:mushroom-entity-card
+            entity: scene.normal
+            name: "Normal"
+            icon: mdi:lightbulb
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.normal
+          - type: custom:mushroom-entity-card
+            entity: scene.bright
+            name: "Bright"
+            icon: mdi:lightbulb-on
+            tap_action:
+              action: call-service
+              service: scene.turn_on
+              service_data:
+                entity_id: scene.bright
+
+      # West Area
+      - type: custom:mushroom-title-card
+        title: "West Area"
+
+      - type: custom:mushroom-light-card
+        entity: light.c1
+        name: "C1"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c2
+        name: "C2"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c3
+        name: "C3"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c4
+        name: "C4"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c5
+        name: "C5"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c6
+        name: "C6"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c7
+        name: "C7"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c8
+        name: "C8"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c9
+        name: "C9"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c10
+        name: "C10"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c11
+        name: "C11"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c12
+        name: "C12"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.n1
+        name: "N1"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+
+      - type: entities
+        title: "West Switches"
+        entities:
+          - switch.l1
+          - switch.l2
+          - switch.l3_2
+          - switch.l4
+          - switch.l6
+
+      # East Area
+      - type: custom:mushroom-title-card
+        title: "East Area"
+
+      - type: custom:mushroom-light-card
+        entity: light.c13
+        name: "C13"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c14
+        name: "C14"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c15
+        name: "C15"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c16
+        name: "C16"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c17
+        name: "C17"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c18
+        name: "C18"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c19
+        name: "C19"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c20
+        name: "C20"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c21
+        name: "C21"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c22
+        name: "C22"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c23
+        name: "C23"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.c24
+        name: "C24"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+      - type: custom:mushroom-light-card
+        entity: light.n2
+        name: "N2"
+        show_brightness_control: true
+        show_color_control: true
+        collapsible_controls: true
+
+      - type: entities
+        title: "East Switches"
+        entities:
+          - switch.l7
+          - switch.l8
+          - switch.l9
+          - switch.l10
+          - switch.l11
+          - switch.l12

@@ -1,0 +1,9 @@
+# Lovelace dashboards configuration
+# Each dashboard is defined with a unique key and configuration
+
+main-dashboard:
+  mode: yaml
+  title: Main
+  icon: mdi:home
+  show_in_sidebar: true
+  filename: lovelace/main.yaml
