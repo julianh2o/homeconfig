@@ -58,52 +58,6 @@
       - cover.athom_garage_door_026b40_garage_door
     data: {}
   mode: single
-- id: '1760932804799'
-  alias: Interpret Security
-  description: ''
-  triggers: []
-  conditions: []
-  actions:
-  - sequence:
-    - action: ai_task.generate_data
-      metadata: {}
-      data:
-        task_name: Interpret Security
-        instructions: Describe this image briefly with no formatting or emoji. If
-          there are cars visible, please enumerate them and specify whether they appear
-          to be arriving (facing towards the camera) or departing (facing away from
-          the camera).
-        entity_id: ai_task.ollama_ai_task
-        attachments:
-          media_content_id: media-source://camera/camera.g6_turret_high_resolution_channel
-          media_content_type: application/vnd.apple.mpegurl
-          metadata:
-            title: G6 Turret High resolution channel
-            thumbnail: /api/camera_proxy/camera.g6_turret_high_resolution_channel
-            media_class: video
-            children_media_class:
-            navigateIds:
-            - {}
-            - media_content_type: app
-              media_content_id: media-source://camera
-      response_variable: payload
-    - choose:
-      - conditions:
-        - condition: template
-          value_template: '{{ payload is string and "arriving" in payload|lower }}'
-        sequence:
-        - target:
-            entity_id: switch.l1
-          action: switch.turn_on
-      - conditions:
-        - condition: template
-          value_template: '{{ payload is string and "arriving" not in payload|lower
-            }}'
-        sequence:
-        - target:
-            entity_id: switch.l1
-          action: switch.turn_off
-  mode: single
 - id: '1764388653971'
   alias: Sunset Automation
   description: ''
@@ -315,34 +269,6 @@
     domain: mobile_app
     type: notify
     message: 'Rivian Detected: Toggling Garage Door'
-- id: '1735674400000'
-  alias: Scan Camera for License Plates on Motion
-  description: Analyzes camera for license plates when motion is detected
-  triggers:
-  - trigger: state
-    entity_id:
-    - binary_sensor.g6_turret_motion
-    to:
-    - 'on'
-  conditions: []
-  actions:
-  - action: codeproject_alpr.analyze_camera
-    data:
-      entity_id: camera.g6_turret_high_resolution_channel
-  - wait_template: '{{ states(''sensor.alpr_detected_plates'') != ''unknown'' }}'
-    timeout: 00:00:10
-  - choose:
-    - conditions:
-      - condition: template
-        value_template: '{{ states(''sensor.alpr_detected_plates'') | int(0) > 0 }}'
-      sequence:
-      - device_id: 74515e8a14a84128e4dfc92843039089
-        domain: mobile_app
-        type: notify
-        message: '{{ states(''sensor.alpr_detected_plates'') }} license plate(s) detected:
-          {{ state_attr(''sensor.alpr_detected_plates'', ''plates'') | map(attribute=''plate'')
-          | join('', '') }}'
-  mode: single
 - id: '1735694400000'
   alias: Driveway ALPR Vehicle Notification
   description: Sends notification when a vehicle is detected arriving or departing

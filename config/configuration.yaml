@@ -20,30 +20,6 @@ http:
 
 template:
   - sensor:
-      - default_entity_id: sensor.ai_description
-        name: AI Camera Description
-        state: "{{ states('sensor.ai_description') }}"
-      - name: Time of Day
-        unique_id: time_of_day_sensor
-        state: >
-          {% set hour = now().hour %}
-          {% if hour < 5 %}
-            Night
-          {% elif hour < 7 %}
-            Early Morning
-          {% elif hour < 12 %}
-            Morning
-          {% elif hour < 13 %}
-            Midday
-          {% elif hour < 17 %}
-            Afternoon
-          {% elif hour < 20 %}
-            Evening
-          {% elif hour < 22 %}
-            Late Evening
-          {% else %}
-            Night
-          {% endif %}
       - name: Last Detected License Plate
         unique_id: last_detected_license_plate
         state: "{{ state_attr('event.g6_turret_vehicle', 'license_plate') | default('None', true) }}"
@@ -52,8 +28,3 @@ template:
           detection_time: "{{ state_attr('event.g6_turret_vehicle', 'event_time') }}"
           confidence: "{{ state_attr('event.g6_turret_vehicle', 'confidence') }}"
           event_type: "{{ state_attr('event.g6_turret_vehicle', 'event_type') }}"
-
-# CodeProject.AI ALPR Integration
-codeproject_alpr:
-  server_url: "http://192.168.0.66:32168"
-  min_confidence: 0.2
