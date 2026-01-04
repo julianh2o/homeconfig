@@ -292,3 +292,21 @@
     message: Detected {{ trigger.to_state.state }} {{ trigger.to_state.attributes.direction
       | title }}
   mode: single
+- id: '1736026800000'
+  alias: Auto-Close House Garage Left Door
+  description: Automatically closes the left garage door after being open for 10 minutes
+  triggers:
+  - trigger: state
+    entity_id:
+    - cover.athom_garage_door_026b40_garage_door
+    to: open
+    for:
+      minutes: 10
+  conditions: []
+  actions:
+  - action: cover.close
+    target:
+      entity_id:
+      - cover.athom_garage_door_026b40_garage_door
+    data: {}
+  mode: single
