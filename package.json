@@ -13,6 +13,15 @@
     "states": "source .env && curl -s -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/states | python3 -m json.tool",
     "status": "source .env && curl -s -H \"Authorization: Bearer $HA_TOKEN\" -H \"Content-Type: application/json\" http://192.168.0.110:8123/api/states | python3 -c \"import sys, json; data = json.load(sys.stdin); [e.pop(k, None) for e in data for k in ['last_changed', 'last_updated', 'last_reported', 'context']]; print(json.dumps(data, indent=2))\"",
     "logs": "ssh root@192.168.0.110 'ha core logs --lines 100'",
-    "logs:follow": "ssh root@192.168.0.110 'ha core logs --follow'"
+    "logs:follow": "ssh root@192.168.0.110 'ha core logs --follow'",
+    "update:areas": "node scripts/update-areas.js",
+    "update:state": "node scripts/update-state.js",
+    "update:components": "node scripts/update-components.js",
+    "update:services": "node scripts/update-services.js",
+    "update:all": "npm run update:areas && npm run update:state && npm run update:components && npm run update:services"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ws": "^8.18.3"
   }
 }

@@ -4,3 +4,5 @@ config/www/
 config/themes/
 config/custom_components/material_symbols/
 config/custom_components/webrtc/
+state/
+node_modules/
